@@ -17,7 +17,7 @@
 	<@comment sheet,"sheet" />
 </#if>
 </div><!-- #page Pjax container-->
-<footer id="colophon" class="site-footer" role="contentinfo">
+<#--  <footer id="colophon" class="site-footer" role="contentinfo">
 	<div class="site-info">
 		<div class="footertext">
 			<p class="foo-logo"
@@ -29,8 +29,8 @@
 		<div class="footer-device">
 			&nbsp; <a href="http://www.akina.pw/themeakina" rel="designer" target="_blank">Theme</a> &nbsp; <a href="https://halo.run/" target="_blank" rel="nofollow">Halo</a> &nbsp;
 		</div>
-	</div><!-- .site-info -->
-</footer><!-- #colophon -->
+	</div>
+</footer>  -->
 <div class="openNav">
 	<div class="iconflat">
 		<div class="icon"></div>
