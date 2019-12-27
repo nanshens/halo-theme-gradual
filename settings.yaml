@@ -375,6 +375,17 @@ focus:
 others:
   label: 其他
   items:
+    need_page_footer:
+      name: need_page_footer
+      label: 全局页尾
+      type: radio
+      data-type: bool
+      default: false
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
     poi_pjax:
       name: poi_pjax
       label: 开启PJAX局部刷新

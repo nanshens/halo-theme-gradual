@@ -17,20 +17,22 @@
 	<@comment sheet,"sheet" />
 </#if>
 </div><!-- #page Pjax container-->
-<#--  <footer id="colophon" class="site-footer" role="contentinfo">
-	<div class="site-info">
-		<div class="footertext">
-			<p class="foo-logo"
-			   style="background-image: url('${static!}/images/f-logo.png');"></p>
-			<p>
-				<@global.footer />
-			</p>
+<#if settings.need_page_footer>
+	<footer id="colophon" class="site-footer" role="contentinfo">
+		<div class="site-info">
+			<div class="footertext">
+				<p class="foo-logo"
+			   	style="background-image: url('${static!}/images/f-logo.png');"></p>
+				<p>
+					<@global.footer />
+				</p>
+			</div>
+			<div class="footer-device">
+				&nbsp; <a href="http://www.akina.pw/themeakina" rel="designer" target="_blank">Theme</a> &nbsp; <a href="https://halo.run/" target="_blank" rel="nofollow">Halo</a> &nbsp;
+			</div>
 		</div>
-		<div class="footer-device">
-			&nbsp; <a href="http://www.akina.pw/themeakina" rel="designer" target="_blank">Theme</a> &nbsp; <a href="https://halo.run/" target="_blank" rel="nofollow">Halo</a> &nbsp;
-		</div>
-	</div>
-</footer>  -->
+	</footer>
+</#if>
 <div class="openNav">
 	<div class="iconflat">
 		<div class="icon"></div>
