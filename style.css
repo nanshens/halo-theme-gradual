@@ -3461,9 +3461,8 @@ li.feature-2 {
 .header-info {
     width: 60%;
     margin: auto;
-    font-size: 14px;
-    color: #EAEADF;
-    background: rgba(0, 0, 0, 0.5);
+    font-size: 25px;
+    color: rgb(255, 255, 255);
     padding: 15px 25px;
     margin-top: 22px;
     font-family: miranafont,"Hiragino Sans GB",STXihei,"Microsoft YaHei",SimSun,sans-serif;
@@ -3694,7 +3693,7 @@ i.iconfont.js-toggle-search.iconsearch {
 
 .s-search input {
     font-size: 1rem;
-    background: #none;
+    background: none;
     padding: 12px 24px 12px 64px;
     width: 100%;
     outline: none;
