@@ -32,7 +32,7 @@
 		<header class="site-header" role="banner">
 			<div class="site-top">
 				<div class="site-branding">
-					<#if options.blog_logo??>
+					<#if options.blog_logo?? && options.blog_logo != "">
 						<div class="site-title">
 							<a href="${context!}">
 								<img src="${options.blog_logo!}">
