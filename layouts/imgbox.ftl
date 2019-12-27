@@ -10,7 +10,7 @@
 		<#else>
          <div class="header-tou" ><a href="${context!}"><img src="${static!}/images/avatar.jpg"></a></div>
 		</#if>
-		<div class="header-info"><p>${user.description!'Carpe Diem and Do what I like'}</p></div>
+		<div class="header-info"><p>${settings.header_description!}</p></div>
 		<div class="top-social">
 		<#if settings.wechat??>
 			<li class="wechat"><a href="#"><img src="${static!}/images/sns/wechat.png"/></a>
