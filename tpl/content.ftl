@@ -25,9 +25,9 @@
 		</div>
 		<p>${post.summary!}</p>
 		<footer class="entry-footer">
-			<div class="post-more">
+			<#--  <div class="post-more">
 				<a href="${context!}/archives/${post.url!}"><i class="iconfont">&#xe6a0;</i></a>
-			</div>
+			</div>  -->
 			<div class="info-meta">
 				<div class="comnum">
 					<span><i class="iconfont">&#xe731;</i>${post.commentCount!0} 条评论</span>
