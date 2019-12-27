@@ -5705,6 +5705,7 @@ i.iconfont.down {
     font-weight: 700;
     color: #000000;
     border: 1px solid #000000;
+    margin: 0 5px 10px 0;
 }
 
 .category-nav a:hover {
