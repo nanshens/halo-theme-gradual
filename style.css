@@ -1094,7 +1094,7 @@ a:active {
 }
 
 .post-list {
-    margin: 0 0 8% 0;
+    margin: 0 0 2% 0;
     position: relative;
 }
 
@@ -3416,7 +3416,7 @@ li.feature-2 {
     position: relative;
     max-width: 800px;
     padding: 0 10px;
-    top: 49.3%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%,-50%);
     -webkit-transform: translate(-50%,-50%);
@@ -3504,15 +3504,15 @@ li.feature-2 {
 
 .wechatInner img {
     border-radius: 0px;
-    width: 121px;
+    width: 200px;
     height: auto;
     padding: 0;
     background: none;
 }
 
 .wechatInner {
-    width: 121px;
-    height: 121px;
+    width: 200px;
+    height: 200px;
     padding: 10px;
     background: rgba(0, 0, 0, 0.4);
     top: 40px;
