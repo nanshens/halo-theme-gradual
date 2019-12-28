@@ -1,10 +1,10 @@
-id: louie_senpai_siren
-name: Siren
+id: nanshen_gradual
+name: Gradual
 author:
-  name: louie-senpai
-  website: https://www.cssplus.org
+  name: nanshen
+  website: https://www.nanshens.com
 description:
 logo:
-website: https://github.com/louie-senpai/Siren
-repo: https://github.com/halo-dev/halo-theme-siren
+website: https://github.com/nanshens/halo-theme-gradual
+repo: https://github.com/nanshens/halo-theme-gradual
 version: 1.0
