@@ -8,18 +8,30 @@
  */
 -->
 <#include "header.ftl">
-<@header title="标签：${tag.name!} - ${options.blog_title!}" keywords="${options.seo_keywords!}" description="${options.seo_description!}">
+<@header title="${tag.name!} - ${options.blog_title!}" keywords="${options.seo_keywords!}" description="${options.seo_description!}">
     <#if (settings.patternimg!true) && (settings.tag_patternimg?? && settings.tag_patternimg!='')>
         <div class="pattern-center">
             <div class="pattern-attachment-img" style="background-image: url(${settings.tag_patternimg!})"> </div>
             <header class="pattern-header">
-                <h1 class="cat-title">标签：${tag.name!}</h1>
+                <h1 class="cat-title">${tag.name!}</h1>
             </header>
         </div>
     <#else>
         <div class="blank"></div>
     </#if>
 </@header>
+<div class="tags">
+<@tagTag method="list">
+  <#list tags?sort_by('postCount')?reverse as tag>
+  <div class="tag-nav">
+    <a href="${context!}/tags/${tag.slugName!}" 
+    rel="${tag.postCount}" data-encode="${tag.slugName}" title="${tag.name}" >${tag.name}
+        <sup>${tag.postCount}</sup>
+    </a>
+  </div>
+  </#list>
+</@tagTag>
+</div>
 
 <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">

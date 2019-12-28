@@ -2,7 +2,7 @@
     @package Akina
 -->
 <#include "header.ftl">
-<@header title="分类：${category.name!} - ${options.blog_title!}" keywords="${options.seo_keywords!}" description="${options.seo_description!}">
+<@header title="${category.name!} - ${options.blog_title!}" keywords="${options.seo_keywords!}" description="${options.seo_description!}">
     <#if (settings.patternimg!true) && (settings.category_patternimg?? && settings.category_patternimg!='')>
         <div class="pattern-center">
             <div class="pattern-attachment-img" style="background-image: url(${settings.category_patternimg!})"> </div>

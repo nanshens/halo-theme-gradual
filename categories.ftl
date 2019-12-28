@@ -4,7 +4,7 @@
         <div class="pattern-center">
             <div class="pattern-attachment-img" style="background-image: url(${settings.archives_patternimg!})"> </div>
             <header class="pattern-header">
-                <h1 class="entry-title">文章分类</h1>
+                <h1 class="entry-title">分类</h1>
             </header>
         </div>
     <#else>

@@ -5714,3 +5714,26 @@ i.iconfont.down {
     color: #b35c5c;
     border: 1px solid #b35c5c;
 }
+
+.tags {
+    overflow: hidden;
+}
+.tag-nav a {
+    min-width: 100px;
+    height: 40px;
+    float: left;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 20px;
+    margin: 0 10px 0 0;
+    font-size: 15px;
+    font-weight: 700;
+    color: #000000;
+    border: 1px solid #000000;
+    margin: 0 5px 10px 0;
+}
+
+.tag-nav a:hover {
+    color: #b35c5c;
+    border: 1px solid #b35c5c;
+}
