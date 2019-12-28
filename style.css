@@ -735,7 +735,7 @@ a:active {
 .pattern-center::after {
     content: '';
     width: 150%;
-    height: 4.375rem;
+    /* height: 4.375rem; */
     background: #fff;
     left: -25%;
     bottom: -2.875rem;
@@ -857,7 +857,7 @@ a:active {
     position: fixed;
     left: 0;
     top: 0;
-    background: rgba(255, 255, 255, .98);
+    /* background: rgba(255, 255, 255, .98); */
     box-shadow: 0 0 1px rgba(0,0,0,.15)
 }
 
@@ -929,7 +929,8 @@ a:active {
     display: inline-block;
     float: right;
     margin: 16.5px 0 0 0;
-    font-size: 15px;
+    font-size: 20px;
+    font-weight: 600;
 }
 
 .site-top .lower nav {
@@ -5692,9 +5693,15 @@ i.iconfont.down {
         display: none;
     }
 }
-.categories {
+
+.category {
     overflow: hidden;
 }
+
+.categories {
+    height: calc(100vh - 400px);
+}
+
 .category-nav a {
     min-width: 100px;
     height: 40px;
@@ -5715,9 +5722,14 @@ i.iconfont.down {
     border: 1px solid #b35c5c;
 }
 
-.tags {
+.tag {
     overflow: hidden;
 }
+
+.tags {
+    height: calc(100vh - 400px);
+}
+
 .tag-nav a {
     min-width: 100px;
     height: 40px;

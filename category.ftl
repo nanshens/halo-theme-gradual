@@ -15,7 +15,7 @@
         <div class="blank"></div>
     </#if>
 </@header>
-<div class="categories">
+<div class="category">
     <@categoryTag method="list">
         <#list categories?sort_by('postCount')?reverse as category>
             <div class="category-nav">

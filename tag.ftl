@@ -20,7 +20,7 @@
         <div class="blank"></div>
     </#if>
 </@header>
-<div class="tags">
+<div class="tag">
 <@tagTag method="list">
   <#list tags?sort_by('postCount')?reverse as tag>
   <div class="tag-nav">
