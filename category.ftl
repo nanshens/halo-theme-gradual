@@ -7,7 +7,7 @@
         <div class="pattern-center">
             <div class="pattern-attachment-img" style="background-image: url(${settings.category_patternimg!})"> </div>
             <header class="pattern-header">
-                <h1 class="cat-title">分类：${category.name!}</h1>
+                <h1 class="cat-title">${category.name!}</h1>
                 <span class="cat-des">${category.description!}</span>
             </header>
         </div>
@@ -15,7 +15,18 @@
         <div class="blank"></div>
     </#if>
 </@header>
-
+<div class="categories">
+    <@categoryTag method="list">
+        <#list categories?sort_by('postCount')?reverse as category>
+            <div class="category-nav">
+                <a href="${context!}/categories/${category.slugName!}" 
+                rel="${category.postCount}" data-encode="${category.slugName}" title="${category.name}" >${category.name}
+                <sup>${category.postCount}</sup>
+            </a>
+        </div>
+    </#list>
+    </@categoryTag>
+</div>
 <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
         <#if posts?? && posts.content?size gt 0>

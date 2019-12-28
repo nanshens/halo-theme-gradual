@@ -5692,7 +5692,9 @@ i.iconfont.down {
         display: none;
     }
 }
-
+.categories {
+    overflow: hidden;
+}
 .category-nav a {
     min-width: 100px;
     height: 40px;
