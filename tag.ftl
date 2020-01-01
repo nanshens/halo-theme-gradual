@@ -8,8 +8,8 @@
  */
 -->
 <#include "header.ftl">
-<@header title="${tag.name!} - ${options.blog_title!}" keywords="${options.seo_keywords!}" description="${options.seo_description!}">
-    <#assign isDaytime = ((.now)?time gt settings.light_theme_time?time("HH:mm"))&&((.now)?time lt settings.dark_theme_time?time("HH:mm"))/>    
+<@header title="${tag.name!} - ${options.blog_title!}" keywords="${options.seo_keywords!}" description="${options.seo_description!}">  
+    <#assign isDaytime = ((.now)?string('HH')?number gt settings.light_theme_time?substring(0,2)?number) && ((.now)?string('HH')?number lt settings.dark_theme_time?substring(0,2)?number) />    
     <#if (settings.patternimg!true) && isDaytime>
         <div class="pattern-center">
             <div class="pattern-attachment-img" style="background-image: url(${settings.tag_patternimg!})"> </div>

@@ -29,8 +29,8 @@
         color: ${settings.theme_skin!};
         border: 1px solid ${settings.theme_skin!};
     }
-
-    <#if true>
+    <#assign isDaytime = ((.now)?string('HH')?number gt settings.light_theme_time?substring(0,2)?number) && ((.now)?string('HH')?number lt settings.dark_theme_time?substring(0,2)?number) />
+    <#if isDaytime>
     
     .site-title a, .site-top ul li a, .searchbox i, .header-info, i.iconfont.js-toggle-search.iconsearch, .entry-title a, .post-list p, .p-time,
     .pattern-center h1.entry-title, .single-center .entry-census, .single-center .entry-census a, .entry-content p{

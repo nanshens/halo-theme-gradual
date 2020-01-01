@@ -405,16 +405,16 @@ others:
       label: 浅色主题开始时间
       type: select
       data-type: string
-      default: 5:00
+      default: 05:00
       options:
-        - value: 5:00
-          label: 5:00
-        - value: 6:00
-          label: 6:00
-        - value: 7:00
-          label: 7:00
-        - value: 8:00
-          label: 8:00
+        - value: 05:00
+          label: 05:00
+        - value: 06:00
+          label: 06:00
+        - value: 07:00
+          label: 07:00
+        - value: 08:00
+          label: 08:00
     light_theme_color:
       name: light_theme_color
       label: 浅色主题风格

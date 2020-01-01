@@ -1,4 +1,4 @@
-<#assign isDaytime = ((.now)?time gt settings.light_theme_time?time("HH:mm"))&&((.now)?time lt settings.dark_theme_time?time("HH:mm"))/>
+<#assign isDaytime = ((.now)?string('HH')?number gt settings.light_theme_time?substring(0,2)?number) && ((.now)?string('HH')?number lt settings.dark_theme_time?substring(0,2)?number) />
 <figure id="centerbg" class="centerbg" style="
 	<#if isDaytime>
 		background-image: url('${settings.focus_img_1!}');
