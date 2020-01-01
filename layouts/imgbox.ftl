@@ -1,4 +1,10 @@
-<figure id="centerbg" class="centerbg" style="background-image: url('${settings.focus_img_1!}');
+<#assign isDaytime = ((.now)?time gt settings.light_theme_time?time("HH:mm"))&&((.now)?time lt settings.dark_theme_time?time("HH:mm"))/>
+<figure id="centerbg" class="centerbg" style="
+	<#if isDaytime>
+		background-image: url('${settings.focus_img_1!}');
+	<#else>
+		background-image: url('${settings.focus_img_1_dark!}');
+	</#if>
 	<#if !(settings.focus_height!true)>
 		background-position: center center;background-attachment: inherit;
 	</#if>

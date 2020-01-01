@@ -30,21 +30,8 @@
         border: 1px solid ${settings.theme_skin!};
     }
 
-    <#if ((.now)?time gt settings.light_theme_time?time("HH:mm"))&&((.now)?time lt settings.dark_theme_time?time("HH:mm"))>
+    <#if true>
     
-    .site-title a, .site-top ul li a, .searchbox i, .header-info, i.iconfont.js-toggle-search.iconsearch, .entry-title a, .post-list p, .p-time,
-    .pattern-center h1.entry-title, .single-center .entry-census, .single-center .entry-census a, .entry-content p{
-        color: ${settings.light_theme_color!}
-    }
-    .category-nav a, .tag-nav a{
-        border: 1px solid ${settings.light_theme_color!};
-        color: ${settings.light_theme_color!};
-    }
-    .wrapper, .pattern-center::after, .comments{
-        background-color: ${settings.dark_theme_color!}
-    }
-    <#else>
-
     .site-title a, .site-top ul li a, .searchbox i, .header-info, i.iconfont.js-toggle-search.iconsearch, .entry-title a, .post-list p, .p-time,
     .pattern-center h1.entry-title, .single-center .entry-census, .single-center .entry-census a, .entry-content p{
         color: ${settings.dark_theme_color!}
@@ -55,6 +42,19 @@
     }
     .wrapper, .pattern-center::after, .comments{
         background-color: ${settings.light_theme_color!}
+    }
+    <#else>
+
+    .site-title a, .site-top ul li a, .searchbox i, .header-info, i.iconfont.js-toggle-search.iconsearch, .entry-title a, .post-list p, .p-time,
+    .pattern-center h1.entry-title, .single-center .entry-census, .single-center .entry-census a, .entry-content p{
+        color: ${settings.light_theme_color!}
+    }
+    .category-nav a, .tag-nav a{
+        border: 1px solid ${settings.light_theme_color!};
+        color: ${settings.light_theme_color!};
+    }
+    .wrapper, .pattern-center::after, .comments{
+        background-color: ${settings.dark_theme_color!}
     }
     </#if>
     </#if>

@@ -1,6 +1,7 @@
 <#include "header.ftl">
 <@header title="文章分类 - ${options.blog_title!}" keywords="${options.seo_keywords!}" description="${options.seo_description!}">
-    <#if (settings.patternimg!true) && (settings.category_patternimg?? && settings.category_patternimg!='')>
+    <#assign isDaytime = ((.now)?time gt settings.light_theme_time?time("HH:mm"))&&((.now)?time lt settings.dark_theme_time?time("HH:mm"))/>    
+    <#if (settings.patternimg!true) && isDaytime>
         <div class="pattern-center">
             <div class="pattern-attachment-img" style="background-image: url(${settings.category_patternimg!})"> </div>
             <header class="pattern-header">
@@ -8,7 +9,12 @@
             </header>
         </div>
     <#else>
-        <div class="blank"></div>
+        <div class="pattern-center">
+            <div class="pattern-attachment-img" style="background-image: url(${settings.category_patternimg_dark!})"> </div>
+            <header class="pattern-header">
+                <h1 class="entry-title">分类</h1>
+            </header>
+        </div>
     </#if>
 </@header>
 <div class="categories">

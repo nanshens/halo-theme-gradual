@@ -3,7 +3,8 @@
 -->
 <#include "header.ftl">
 <@header title="${keyword!} - 搜索结果 - ${options.blog_title!}" keywords="${options.seo_keywords!}" description="${options.seo_description!}">
-	<#if (settings.patternimg!true) && (settings.searh_patternimg?? && settings.searh_patternimg!='')>
+	<#assign isDaytime = ((.now)?time gt settings.light_theme_time?time("HH:mm"))&&((.now)?time lt settings.dark_theme_time?time("HH:mm"))/>
+	<#if (settings.patternimg!true) && isDaytime>
 		<div class="pattern-center">
 			<div class="pattern-attachment-img" style="background-image: url(${settings.searh_patternimg!})"> </div>
 			<header class="pattern-header">
@@ -11,7 +12,12 @@
 			</header>
 		</div>
 	<#else>
-		<div class="blank"></div>
+		<div class="pattern-center">
+			<div class="pattern-attachment-img" style="background-image: url(${settings.searh_patternimg_dark!})"> </div>
+			<header class="pattern-header">
+				<h1 class="entry-title search-title"> 关于“ ${keyword!} ”的搜索结果</h1>
+			</header>
+		</div>
 	</#if>
 </@header>
 
