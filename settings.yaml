@@ -30,24 +30,44 @@ general:
           label: 关闭
     archives_patternimg:
       name: archives_patternimg
-      label: 归档页面头部装饰图
+      label: 浅色归档页面头部装饰图
       type: attachment
+    archives_patternimg_dark:
+      name: archives_patternimg_dark
+      label: 深色归档页面头部装饰图
+      type: attachment      
     links_patternimg:
       name: links_patternimg
-      label: 友情链接页面头部装饰图
+      label: 浅色友情链接页面头部装饰图
       type: attachment
+    links_patternimg_dark:
+      name: links_patternimg_dark
+      label: 深色友情链接页面头部装饰图
+      type: attachment      
     searh_patternimg:
       name: searh_patternimg
-      label: 搜索页面头部装饰图
+      label: 浅色搜索页面头部装饰图
       type: attachment
+    searh_patternimg_dark:
+      name: searh_patternimg_dark
+      label: 深色搜索页面头部装饰图
+      type: attachment      
     tag_patternimg:
       name: tag_patternimg
-      label: 标签下文章页面头部装饰图
+      label: 浅色标签下文章页面头部装饰图
       type: attachment
+    tag_patternimg_dark:
+      name: tag_patternimg_dark
+      label: 深色标签下文章页面头部装饰图
+      type: attachment      
     category_patternimg:
       name: category_patternimg
-      label: 分类下文章页面头部装饰图
+      label: 浅色分类下文章页面头部装饰图
       type: attachment
+    category_patternimg_dark:
+      name: category_patternimg_dark
+      label: 深色分类下文章页面头部装饰图
+      type: attachment      
     top_search:
       name: top_search
       label: 搜索按钮
@@ -140,9 +160,14 @@ mainScreen:
           label: 关闭
     focus_img_1:
       name: focus_img_1
-      label: 背景图
+      label: 浅色背景图
       type: attachment
-      default: '/louie_senpai_siren/images/hd.jpg'
+      # default: '/louie_senpai_siren/images/hd.jpg'
+    focus_img_1_dark:
+      name: focus_img_1_dark
+      label: 深色背景图
+      type: attachment
+      # default: '/louie_senpai_siren/images/hd.jpg'      
 #    focus_img_2:
 #      name: focus_img_2
 #      label: 背景图 - 2
@@ -388,6 +413,8 @@ others:
           label: 6:00
         - value: 7:00
           label: 7:00
+        - value: 8:00
+          label: 8:00
     light_theme_color:
       name: light_theme_color
       label: 浅色主题风格
@@ -406,6 +433,8 @@ others:
           label: 18:00
         - value: 19:00
           label: 19:00
+        - value: 20:00
+          label: 20:00
     dark_theme_color:
       name: dark_theme_color
       label: 暗色主题风格
